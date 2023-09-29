@@ -42,7 +42,7 @@ const View = () => {
                     <Link className='link-2' to={'/create'}>Add a Episode</Link>
                 </button>
                 <button className='btn btn-warning' >
-                    <Link className='link-2' to={'/episodes'}>Episodes</Link>
+                    <Link className='link-2' to={'/UCBP'}>Episodes</Link>
                 </button>
             </div>
             <table id='button-view' className='table table-striped table-condensed'>

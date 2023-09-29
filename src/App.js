@@ -18,6 +18,10 @@ import Pract from './components/Main/Pract';
 import ThirdPract from './components/Main/ThirdPract';
 import FourthPract from './components/Main/FourthPract';
 import Spotify from './components/MainBarTags/Spotify';
+import UCBPepisodes from './components/UCBPepisodes';
+import MainBar2 from './components/Main/MainBar2';
+import BotBar2 from './components/Main/BotBar2';
+import MainPage2 from './components/Main/MainPage2';
 
 
 
@@ -27,13 +31,13 @@ function App() {
 
   return (
     <div className="App">
-      <MainBar></MainBar>
+      <MainBar2></MainBar2>
       <Routes>
         <Route path='/pract' element={<Pract/>} />
         <Route path='/secondPract' element={<SecondPract/>} />
         <Route path='/thirdPract' element={<ThirdPract/>} />
         <Route path='/fourthPract' element={<FourthPract/>} />
-        <Route path='/' element={<MainPage/>} />
+        <Route path="/" element={<MainPage2/>}/>
         <Route path="/view" element={<View />} />
         <Route path='/create' element={<Create/>} />
         <Route path='/details/:id' element={<Details/>} />
@@ -42,9 +46,8 @@ function App() {
         <Route path='/connect' element={<Connect/>} />
         <Route path='/news' element={<CBnews/>} />
         <Route path='/episodes' element={<Spotify/>} />
+        <Route path='/UCBP' element={<UCBPepisodes/>} />
       </Routes>
-
-    <BotBar></BotBar>
     </div>
   );
 }

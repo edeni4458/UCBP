@@ -6,6 +6,7 @@ import React from 'react';
 
 const MainBar = () => {
 
+
     return (
         <div>
             <div className='nav-bar-main'>
