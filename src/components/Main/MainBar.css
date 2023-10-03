@@ -1,34 +1,40 @@
-
-
 .nav-bar-main {
-    height: 85px;
-    background-color: #282c34;
+    height: 15em;
+    background: linear-gradient(to bottom right, #30353e,  black);
     color: white;
     display: flex;
-    justify-content: space-around;
+    /* flex-wrap: wrap; */
     align-items: center;
+    width: 100%;
+    padding: 5em;
+    margin-bottom: 5em;
+    
 }
 
 #nav-title {
-    margin-top: 15px;
-    font-weight: 100;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    text-transform: uppercase;
-    font-style: none;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: x-large;
+    text-align: end;
 }
 
 #ucbp-logo {
-    height: 94px;
+    height: 5em;
+    width: auto;
+    opacity: .5;
+    transition: opacity 0.3s ease-in-out;
+    margin-right: 1em;
+
 }
 
 #ucbp-logo:hover {
-    box-shadow: #282c34 2px 2px 2px;
+    opacity: 1;
 }
 
 .nav-right {
-    width: 45%;
-    margin-left: 50px;
+    width: 80%;
+    /* margin-left: 50px    ; */
     margin-top: 25px;
+
 }
 
 .nav-list {
@@ -47,11 +53,6 @@
     font-style: none;
 }
 
-.red-bar {
-    height: 5px;
-    background-color: #DE1A1A;
-    margin-bottom: 50px;
-}
 
 /* Bottom Bar */
 
@@ -61,6 +62,7 @@
     background-color: #DE1A1A;
     height: 12em auto;
     margin: 0 auto;
+    padding: 1em;
 }
 
 .nav-listB {
@@ -80,6 +82,11 @@
 .codec-imageB {
     height: 7em;
     padding: 40px;
+
+}
+
+.social-mediaB {
+    text-align: center;
 }
 
 
@@ -88,40 +95,129 @@
 .main-container {
     margin: 0 auto;
     margin-bottom: 700px;
-    height: 400px;
-    width: 1250px;
+    height: 100%;
+    width: 100%;
 }
 
 .first-top-width {
-    text-align: end;
-    height: 500px;
-    width: 1200px;
+    max-height: 22em;
+    min-height: 22em;
+    width: clamp(100%, 100%, 100%);
+    background: linear-gradient(to bottom right, #6699ff,  #3633ff);
+    margin-bottom: 5em;
+    display: flex;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+.first-mid-width {
+    max-height: 25em;
+    min-height: 25em;
+    width: clamp(100%, 100%, 100%);
+    background: linear-gradient(to bottom right, #fffa66,  #ff8833);
+    display: flex;
+    /* border-top: 2px solid white ;
+    border-bottom: 2px solid white ; */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
+.video-flex {
+    display: flex;
+    justify-content: center;
+    margin-top: 3em;
+    gap: 12em;
+}
+
+
+.fix-image {
+    object-fit: cover;
+    width: 25em;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1));
+    
+}
+
+/* .fix-image {
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.fix-image:hover {
+    transform: scale(1.1);
+
+} */
+
+
+
+
+.sub-text {
+    margin-left: 10em;
+    margin-top: 3em;
+    color: whitesmoke;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+.sub-text >h2 {
+    margin-bottom: 2.5em;
+}
+#link-to-connect:hover {
+    color: darkred;
+    text-decoration: underline;
+    cursor: pointer;
+}
 
 .fav-episodes {
     height: 250px;
     width: 250px;
     border-radius: 10%;
 }
+.fav-episodes:hover {
+    transform: scale(1.3);
+}
 
-.fav-titles {
+.episode-title {
+    text-align: center;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: .5em;
+    padding: 1em;
+}
+/* MainTop */
+.first-bot-width{
+    margin-top:5em;
+    max-height: 25em;
+    min-height: 25em;
+    background: linear-gradient(rgba(0, 0, 0, 0.764), rgba(0, 0, 0, 0.1));
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    
+    text-align: center;
+    width: clamp(100%, 100%, 100%);
+    /* margin: 0 auto; */
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 80px;
-    background: #000000d8;
-    width: 1250px;
-    margin: 0 auto;
-    border-bottom: 1px solid whitesmoke;
+    justify-content: center;
 }
 
-.boxA {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bolder;
-    color: whitesmoke;
-    margin-left: 20px;
+.mid-pic {
+    /* width: 25em; */
+    height: 22em;
+    /* object-fit: cover; */
+    text-align: center;
+    width: clamp(50%, 80%, 90%);
+    margin-left: 3.5em;
 }
+
+.slider-set {
+    width: clamp(20%, 45%, 80%);
+    margin-top: .5em;
+
+}
+.slider-set-main {
+    width: clamp(20%, 45%, 80%);
+    margin-top: .5em;
+
+}
+
+
+
+
+
+
 
 /* About page */
 .container-main {

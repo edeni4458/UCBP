@@ -1,4 +1,6 @@
 import { Link } from 'react-router-dom';
+import ucbpLogo from '../Main/images/ucbp-logo.png'
+
 import React from 'react';
 
 
@@ -17,12 +19,11 @@ const MainBar = () => {
                         <li><Link to={"/"} className='nav-link'>Home</ Link></li>
                         <li><Link to={"/about"} className='nav-link'>About</ Link></li>
                         <li><Link to={"/view"} className='nav-link'>Episodes</Link></li>
-                        <li> <Link to={"/news"} className='nav-link'>C-B News</Link></li>
+                        <li><Link to={"/news"} className='nav-link'>C-B News</Link></li>
                         <button className='btn btn-outline-danger'><li><Link to={"/connect"} className='nav-link'>Connect</Link></li></button>
                     </ul>
                 </div>
             </div>
-            <div className="red-bar"></div>
         </div>
     )
 }

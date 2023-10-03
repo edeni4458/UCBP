@@ -1,4 +1,6 @@
 import solidSnakeL from './images/solid-snake.jpg'
+import PhantomCigar2 from './images/Phantom-cigar2.gif'
+import MainTop from './MainPageParts/MainTop'
 import { Container } from 'react-bootstrap'
 import React from 'react'
 
@@ -6,45 +8,43 @@ const MainPage = () => {
 
 
 
+
     return (
         <div>
             <div className="main-container">
-                <div className="first-top-width" style={{backgroundImage: `url(${solidSnakeL})`,
-                                                        backgroundRepeat: "no-repeat",
-                                                        backgroundSize: "50%",
-                                                        backgroundPosition: "start",
-                                                        }}>
-                    <h3>Join us under the cardboard box</h3>
-                    <h5>Watch or listen to your favorite episodes, now with the ability to add your comments.</h5>
-                </div>
-                <div className="fav-titles">
-                    <div className="boxA">
-                        <h5>EP 51: It's Not Perfect<br></br>But We Love It!</h5>
-                    </div>
-                    <div className="boxA">
-                        <h5>Ep 21: David Hayter<br></br>Is Back As Snake!</h5>
-                    </div>
-                    <div className="boxA">
-                        <h5>Ep 12: Our Favorite Non<br></br>Canon Metal Gear Games</h5>
+                <div className="first-top-width">
+                    <img className="fix-image" src={solidSnakeL} alt="picture of solid snake" />
+                    <div className="sub-text">
+                        <h2>We are UCBP and MGS is our business</h2>
+                        <h3><span id='link-to-connect'>Join us</span> under the cardboard box</h3>
+                        <h5>Watch or listen to your favorite episodes, now with the ability to add your comments</h5>
                     </div>
                 </div>
-                <div className="fav-ep-box">
+                <div className="first-mid-width">
                     <Container>
-                        <div className="ratio ratio-21x9">
-                            <iframe className='fav-episodes' width="80" height="80" src="https://www.youtube.com/embed/qEWwW-OGcHQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
-                        </div>
-                    </Container>
-                    <Container>
-                        <div className="ratio ratio-21x9">
-                            <iframe className='fav-episodes' width="80" height="80" src="https://www.youtube.com/embed/b8KbjzcHeYE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
-                        </div>
-                    </Container>
-                    <Container>
-                        <div className="ratio ratio-21x9">
-                            <iframe className='fav-episodes' width="80" height="80" src="https://www.youtube.com/embed/LaM-MqoopiA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+                        <div className="video-flex">
+                            <div className="">
+                                <div className="">
+                                    <iframe className='fav-episodes' src="https://www.youtube.com/embed/-0zVUhJ84cs?si=0C7UBQU7fzIDhBf8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                    <h4 className='episode-title'>Episode 1</h4>
+                                </div>
+                            </div>
+                            <div className="">
+                                <div className="">
+                                    <iframe className='fav-episodes' src="https://www.youtube.com/embed/tqG9FIDJdy8?si=UOiX9VLM_cX8ODRM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                    <h4 className='episode-title'>Episode 35</h4>
+                                </div>
+                            </div>
+                            <div className="">
+                                <div className="">
+                                    <iframe className='fav-episodes' src="https://www.youtube.com/embed/X12vUzWN8c4?si=UThlu9HQ7bF9wKY1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                    <h4 className='episode-title'>Episode 16</h4>
+                                </div>
+                            </div>
                         </div>
                     </Container>
                 </div>
+                <MainTop></MainTop>
             </div>
         </div>
     )
