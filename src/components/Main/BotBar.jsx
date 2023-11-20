@@ -11,9 +11,9 @@ const BotBar = () => {
                     <div class="container-fluid flex-row">
                         <div class="container-fluid flex-row ">
                             <div class="d-flex justify-content-evenly bd-highlight text-white">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
-                                <a class="nav-link" href="#">About</a>
-                                <a class="nav-link" href="#">Connect</a>
+                                <a class="nav-link active" aria-current="page" href="">Home</a>
+                                <a class="nav-link" href="">About</a>
+                                <a class="nav-link" href="">Connect</a>
                             </div>
                         </div>
                     </div>
